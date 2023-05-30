@@ -8,6 +8,8 @@ message User {
     string id = 1;
     string first_name = 2;
     string last_name =3;
+    string created_at = 4;
+    string updated_at = 5;
 }
 
 message CreateUserRequest{
@@ -19,12 +21,14 @@ message CreateUserResponse{
     string id = 1;
     string first_name = 2;
     string last_name =3;
+    string created_at = 4;
 }
 
 message GetByIdUserResponse{
     string id = 1;
     string first_name = 2;
     string last_name =3;
+    string created_at = 4;
 }
 
 message GetUsersListRequest{
@@ -41,6 +45,13 @@ message GetUsersListResponse{
 message UpdateUserRequest {
     string first_name = 1;
     string last_name =2;
+}
+message UpdateUserResponse {
+    string id = 1;
+    string first_name = 2;
+    string last_name =3;
+    string created_at = 4;
+    string updated_at = 5;
 }
 
 message UserPKey{
