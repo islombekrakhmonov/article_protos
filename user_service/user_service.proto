@@ -10,6 +10,6 @@ service UserService{
     rpc GetByID(UserPKey)returns(GetByIdUserResponse);
     rpc GetList(GetUsersListRequest)returns(GetUsersListResponse);
     rpc UpdatePatch(UpdatePatchUserRequest)returns(User);
-    rpc Update(UpdateUserRequest)returns(UpdateUserResponse);
+    rpc Update(UserPKey,UpdateUserRequest)returns(UpdateUserResponse);
     rpc Delete(UserPKey)returns(google.protobuf.Empty);
 }
